@@ -4,19 +4,15 @@ body{
     height: 100%;  /* height:100vh for full screen*/
 }
 .text {
-    position: -webkit-fixed;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    display: block;
+    margin: auto;
+    width: fit-content;
     margin-bottom: 9px;
     display: flex;
-    margin-top: 0px;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: calc(-50px + 6.2vw);
+    font-family: 'verdana', Arial, sans-serif;
+    font-size: calc(-50px + 5.5vw);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.05em;
@@ -25,14 +21,8 @@ body{
     color: black;
     background-color: rgb(99, 120, 131);
     opacity: 1;
-    animation-name: fadeInText;
-    animation-duration: 3s;
-    animation-delay: 1s;  /*IF ITERATION COUNT IS INFINITE ANIMATION DELAY WORKS ONLY FOR FIRST TIME*/
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.59,-0.21,.51,1.03);
-}
-@keyframes fadeInText{
-    100%   {opacity: 0}
+    border-radius: 15px;
+    padding: 4px;
 }
 #dob{
     z-index: -1;
