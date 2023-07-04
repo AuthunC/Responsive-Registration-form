@@ -1,0 +1,154 @@
+body{
+    background-color: aliceblue;
+    position: relative;
+    height: 100%;  /* height:100vh for full screen*/
+}
+.text {
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 9px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: calc(-50px + 6.2vw);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    background-color: rgb(99, 120, 131);
+    opacity: 1;
+    animation-name: fadeInText;
+    animation-duration: 3s;
+    animation-delay: 1s;  /*IF ITERATION COUNT IS INFINITE ANIMATION DELAY WORKS ONLY FOR FIRST TIME*/
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.59,-0.21,.51,1.03);
+}
+@keyframes fadeInText{
+    100%   {opacity: 0}
+}
+#dob{
+    z-index: -1;
+}
+.head{
+    width: 100%;
+}
+.head h1{
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    width: min(100%,600px);
+    height:750px;
+    border: 2px solid black;
+    margin-top: 15px;
+    padding: 25px;
+    padding-bottom: 0%;
+    border-radius: 20px; 
+}
+.form input{
+    padding: 18px;
+    border-radius: 5px;
+}
+.container{
+
+    height: fit-content;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.mailphone{
+    display: flex;
+    justify-content: space-around;
+}
+#mail, #num{
+    width: 250px;
+}
+.qual{
+    margin-left: -16px; 
+}
+.qual, .radiob{
+    font-size: 25px;
+    
+}
+.qualradiob{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.upload{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    border: 3px dotted black;
+    border-radius: 20px;
+}
+#img{
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+#p1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0%;
+    cursor: pointer;
+}
+#browse{
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 38px;
+    padding-top: 7px;
+}
+input::placeholder {
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    opacity: 0.5;
+    color: black;
+    letter-spacing: 0.7px;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#a1{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    size: 20px;
+    background-color: aliceblue;
+    width: 100px;
+    height: 55px;
+    border: 3px outset burlywood;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+p{
+    font-size: 20px;
+}
